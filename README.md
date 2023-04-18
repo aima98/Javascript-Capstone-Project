@@ -77,7 +77,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 - **cd your-folder**
-- **git clone https://github.com/aima98/Leaderbord**
+- **git clone https://github.com/aima98/Javascript-Capstone-Project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ Clone this repository to your desired folder:
 ## 🔭 Credits <a name="future-features"></a>
 
 - Project from [Microverse's](https://bit.ly/MicroverseTN) JavaScript and Networking Module
-- Api from [TheMealDB](https://www.themealdb.com/)
+- Api from [TheTVMaze](https://www.tvmaze.com/api)
 - Topic inspired by [Microverse](https://www.microverse.org/)
 
 ## 🔭 Future Features <a name="future-features"></a>
