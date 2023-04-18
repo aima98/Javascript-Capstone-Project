@@ -60,9 +60,11 @@ b {
   top: 1rem;
   right: 0.5rem;
 }
+
 .hamburger:hover {
   cursor: pointer;
 }
+
 .hamburger span {
   display: block;
   background-color: #735adf;
@@ -73,13 +75,16 @@ b {
   transition: 0.3s all ease-in-out;
   position: relative;
 }
+
 .change.first-bar {
   top: 0.8rem;
   transform: rotate(45deg);
 }
+
 .change.second-bar {
   opacity: 0;
 }
+
 .change.third-bar {
   bottom: 0.755rem;
   transform: rotate(-45deg);
@@ -111,7 +116,7 @@ b {
     margin-top: 27px;
     font-size: 14px;
   }
-  
+
   .circle {
     color: #4b07d2;
     margin-left: -70px;
@@ -134,7 +139,7 @@ b {
     align-items: center;
     padding: 30px 200px;
   }
-  
+
   .nav__items {
     display: flex;
     justify-content: space-around;
@@ -150,9 +155,11 @@ b {
     position: static;
     width: 100vw;
   }
+
   .hamburger {
     display: none;
   }
+
   .footer-text {
     font-size: 12px;
     border: 2px solid #a09999;
