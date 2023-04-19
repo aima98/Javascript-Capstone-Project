@@ -133,7 +133,7 @@ h1 {
   h1 {
     position: fixed;
     margin-top: 27px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .logo {
