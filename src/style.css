@@ -344,4 +344,13 @@ h1 {
     background-color: #b4aeae;
     border: #b4aeae;
   }
+  .close {
+    display: none;
+  }
+
+  .pop__up {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
