@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import fetch from './fetch.js';
+import fetchLt from './fetch.js';
 
 const popUp = document.querySelector('.pop__up');
 popUp.innerHTML = '';
@@ -12,16 +11,18 @@ popUpButton.classList.add('close');
 const popUpFunction = (commentButton) => {
   commentButton.forEach((element) => {
     element.addEventListener('click', (e) => {
-      const dishId = e.target.id;
+      const foodId = e.target.id;
       const getName = () => {
-        fetch('https://themealdb.com/api/json/v1/1/categories.php/}').then(
+        fetchLt(`https://themealdb.com/api/json/v1/1/categories.php/${foodId}`).then(
           (data) => {
             const popUpItems = `<div class="pop__up__img">
-            <img src="${data.strCategoryThumb}" alt="Dishes category />
+            <img src="${data.strCategoryThumb}"/>
             </div>
             <div class="pop__up__title">
             <h2>${data.strCategory}</h2>
-            </div> `;
+            <p>${data.strCategoryDescription}</p>
+            </div> 
+            `;
             popUp.innerHTML = popUpItems;
           },
         );

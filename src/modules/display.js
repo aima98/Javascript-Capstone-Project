@@ -1,4 +1,5 @@
 import fetchLt from './fetch.js';
+import popUpFunction from './popUpFunction.js';
 
 const displayList = async () => {
   const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
@@ -20,11 +21,13 @@ const displayList = async () => {
             </div>
         </div>
         <div class="card-more">
-            <button type="button" class="card-btn">Comments</button>
+            <button type="button" class="card-btn comment-btn">Comments</button>
             <button type="button" class="card-btn">Reservations</button>
         </div>
     </div>`).join('');
   cardContainer.innerHTML = cards;
+  const commentButton = document.querySelectorAll('.comment-btn');
+  popUpFunction(commentButton);
 };
 
 export default displayList;
