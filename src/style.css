@@ -16,10 +16,11 @@ li {
 
 a {
   text-decoration: none;
+  color: #070607;
 }
 
 .nav__branding {
-  color: #4b07d2;
+  color: #070607;
   margin-left: 40px;
   position: fixed;
   height: 75px;
@@ -28,7 +29,7 @@ a {
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
-  border: 1px solid #4b07d2;
+  border: 1px solid #070607;
   margin-top: -39px;
 }
 
@@ -113,26 +114,24 @@ h1 {
 
 @media only screen and (min-width: 768px) {
   body {
-    overflow-x: hidden;
+    background-color: #a09999;
   }
 
   .nav__branding {
-    color: #4b07d2;
+    color: #070607;
     margin-left: 40px;
-    position: fixed;
     height: 95px;
     width: 95px;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     border-radius: 50%;
-    border: 1px solid #4b07d2;
+    border: 1px solid #070607;
     margin-top: -39px;
   }
 
   h1 {
-    position: fixed;
-    margin-top: 27px;
+    margin-top: -19px;
     margin-left: 0;
   }
 
@@ -144,10 +143,15 @@ h1 {
   }
 
   .header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 200px;
+    background-color: #a09999;
+    height: 113px;
+    width: 100%;
+    margin-top: -137px;
   }
 
   .nav__items {
@@ -164,6 +168,7 @@ h1 {
     position: fixed;
     width: 90vw;
     justify-content: center;
+    margin-top: -44px;
   }
 
   .hamburger {
@@ -180,5 +185,79 @@ h1 {
     padding-left: 10px;
     margin-top: 368px;
     font-weight: 600;
+  }
+
+  .container-main {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .container-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    margin-top: 137px;
+  }
+
+  .card-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-left: 43px;
+  }
+
+  .card-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .card {
+    width: 30%;
+    padding: 15px 30px;
+  }
+
+  .card > img {
+    width: 26vh;
+  }
+
+  .like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 34px 22px;
+    margin-left: 8px;
+  }
+
+  .like > i {
+    padding-left: 17px;
+  }
+
+  .like-count {
+    margin-left: inherit;
+    width: 107px;
+  }
+
+  .fa-heart {
+    margin-top: 4px;
+  }
+
+  .card-more {
+    display: flex;
+    flex-direction: column;
+    margin-top: -27px;
+  }
+
+  .card-btn {
+    margin: 11px 20px;
+    cursor: pointer;
+    padding: 6px 7px;
+    box-shadow: 2px 3px black;
+    width: 105px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #b4aeae;
+    border: #b4aeae;
   }
 }
