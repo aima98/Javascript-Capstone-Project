@@ -1,4 +1,4 @@
-import fetchLt from './fetch.js';
+import fetch from './fetch.js';
 
 const popUp = document.querySelector('.pop__up');
 popUp.innerHTML = '';
@@ -13,7 +13,7 @@ const popUpFunction = (commentButton) => {
     element.addEventListener('click', (e) => {
       const foodId = e.target.id;
       const getName = () => {
-        fetchLt(`https://themealdb.com/api/json/v1/1/categories.php/${foodId}`).then(
+        fetch(`https://themealdb.com/api/json/v1/1/categories.php/${foodId}`).then(
           (data) => {
             const popUpItems = `<div class="pop__up__img">
             <img src="${data.strCategoryThumb}"/>
