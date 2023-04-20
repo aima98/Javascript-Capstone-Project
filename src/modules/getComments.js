@@ -1,4 +1,5 @@
 import { commentBaseApi } from './config.js';
+import commentsCounters from './countComment.js';
 
 const getComments = async (id) => {
   const commentEl = document.querySelector('.comments__item');
@@ -16,6 +17,7 @@ const getComments = async (id) => {
              `;
     });
     commentEl.innerHTML = markup;
+    commentsCounters();
     return 'done';
   } catch (err) {
     return err;
