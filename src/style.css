@@ -344,6 +344,7 @@ h1 {
     background-color: #b4aeae;
     border: #b4aeae;
   }
+
   .close {
     display: none;
   }
@@ -356,7 +357,6 @@ h1 {
   }
 
   .popup__containter {
-    background-color:#b4aeae;
-
+    background-color: #b4aeae;
   }
 }
