@@ -2,7 +2,7 @@ const mockComment = [
   {
     item_id: 1,
     comment: [
-      'commnet 1',
+      'comment 1',
       'comment 2',
     ],
   },
