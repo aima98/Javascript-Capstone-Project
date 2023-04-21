@@ -1,5 +1,6 @@
 import { foodBaseUrl } from './config.js';
 import renderLikes from './renderLikes.js';
+import itemsCounter from './allItemsCounter.js';
 
 const foodContainerEl = document.querySelector('.foods__container');
 
@@ -34,6 +35,7 @@ const renderFoodItems = async () => {
         renderLikes(item.idMeal);
         return 'done';
       });
+      itemsCounter();
     } catch (err) {
       foodContainerEl.innerHTML = err;
     }

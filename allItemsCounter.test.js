@@ -1,8 +1,31 @@
-import foodItems from './src/modules/foodItems.js';
 import itemsCounter from './src/modules/allItemsCounter.js';
 
-describe('Test for Items Counter', () => {
-  test('Test Items counter', () => {
-    expect(itemsCounter()).toBe(foodItems.length);
+describe('itemsCounter', () => {
+  beforeEach(() => {
+    document.body.innerHTML = `
+      <div class="food__container">
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+      <h2 id="recipe"></h2>
+    `;
+  });
+
+  test('updates category title with correct count', () => {
+    itemsCounter();
+
+    const mealTitle = document.querySelector('#recipe');
+    expect(mealTitle.textContent).toBe('Recipes(2)');
+  });
+
+  test('does not update category title if no cards are present', () => {
+    document.body.innerHTML = `
+      <div class="food__container"></div>
+      <h2 id="recipe"></h2>      
+    `;
+    itemsCounter();
+
+    const mealTitle = document.querySelector('#recipe');
+    expect(mealTitle.textContent).toBe('Recipes(0)');
   });
 });
