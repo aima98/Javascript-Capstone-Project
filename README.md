@@ -25,7 +25,7 @@
 
 # 📖 [Javascript_Capstone_Project] <a name="about-project"></a>
 
-**[Javascript_Capstone_Project] is a the capstone project for the Javascript and Networking Module, that takes part in the Microverse Full Stack Development Program. It is a responsive website and an optimized TV series webapp that contains two interfaces and which displays different series , interactive likes and comments for each particular piece.
+**[Javascript_Capstone_Project] is a the capstone project for the Javascript and Networking Module, that takes part in the Microverse Full Stack Development Program. It is a responsive website and an optimized food webapp that contains two interfaces and which displays different meals , interactive likes and comments for each particular item.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML
@@ -58,7 +58,7 @@ Linters
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- To be added later
+- https://drive.google.com/file/d/1-1FwOo5ex4I_iJ6Fu6SqyTIFH3sHiB86/view?usp=sharing
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ Clone this repository to your desired folder:
 ## 🔭 Credits <a name="future-features"></a>
 
 - Project from [Microverse's](https://bit.ly/MicroverseTN) JavaScript and Networking Module
-- Api from [TheTVMaze](https://www.tvmaze.com/api)
+- Api from [TheMealDB](https://www.themealdb.com/api/json/v1/1/search.php?s)
 - Topic inspired by [Microverse](https://www.microverse.org/)
 
 ## 🔭 Future Features <a name="future-features"></a>
