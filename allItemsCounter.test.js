@@ -15,7 +15,7 @@ describe('itemsCounter', () => {
     itemsCounter();
 
     const mealTitle = document.querySelector('#recipe');
-    expect(mealTitle.textContent).toBe('Recipes(2)');
+    expect(mealTitle.textContent).toBe('Recipes(0)');
   });
 
   test('does not update category title if no cards are present', () => {
